@@ -1,0 +1,7 @@
+jdk:
+ - openjdk11
+ 
+install:
+ - ./gradlew :libone:build :libone:publishToMavenLocal
+ - ./gradlew :libtwo:build :libtwo:publishToMavenLocal
+ - find . -name "*.aar"
